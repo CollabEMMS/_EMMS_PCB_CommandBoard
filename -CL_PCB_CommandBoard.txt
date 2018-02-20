@@ -1,0 +1,10 @@
+Version 2.4
+
+Ongoing Issues:
+	Button press turns off and on meter
+	Traces were shorted in places scratched out on white boards
+
+
+
+Changes:
+	

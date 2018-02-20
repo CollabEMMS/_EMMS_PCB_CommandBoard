@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -17913,12 +17913,12 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <net name="EMER_BTN_IN" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="VREF+/CVREF+/AN0/C3INC/CTED1/CN2/RA0"/>
-<pinref part="S1" gate="1" pin="S"/>
-<wire x1="198.12" y1="109.22" x2="200.66" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="109.22" x2="200.66" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="96.52" x2="195.58" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="96.52" x2="195.58" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="83.82" x2="200.66" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="S1" gate="1" pin="S"/>
+<wire x1="198.12" y1="109.22" x2="200.66" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -18042,6 +18042,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="99.06" x2="205.74" y2="96.52" width="0.1524" layer="91"/>
+<label x="208.28" y="96.52" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -18394,8 +18395,9 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <net name="N$19" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="CVREF-/VREF-/AN1/CN3/RA1"/>
-<wire x1="200.66" y1="81.28" x2="198.12" y2="81.28" width="0.1524" layer="91"/>
 <label x="195.58" y="81.28" size="1.778" layer="95"/>
+<wire x1="200.66" y1="81.28" x2="195.58" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="81.28" x2="195.58" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -18557,15 +18559,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <label x="215.9" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="S1" gate="1" pin="S1"/>
-<wire x1="198.12" y1="106.68" x2="203.2" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="106.68" x2="203.2" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="203.2" y1="109.22" x2="205.74" y2="109.22" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="RELAY_CONTROL" class="0">
 <segment>
 <wire x1="378.46" y1="53.34" x2="378.46" y2="25.4" width="0.1524" layer="91"/>
@@ -18574,6 +18567,14 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <label x="360.68" y="53.34" size="1.778" layer="95"/>
 <pinref part="Q2-IRF510" gate="G$1" pin="G"/>
 <wire x1="381" y1="25.4" x2="378.46" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="S1" gate="1" pin="S1"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="198.12" y1="106.68" x2="205.74" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="106.68" x2="205.74" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

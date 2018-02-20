@@ -7,4 +7,7 @@ Ongoing Issues:
 
 
 Changes:
-	
+
+
+11/16/17
+	Fixed overlapping traces that shorted button and other parts of board
